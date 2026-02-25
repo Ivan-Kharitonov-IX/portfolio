@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Имя Фамилия — Разработчик онлайн-курсов</title>
+<title>Иван Харитонов — Instructional Designer</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
 
 * {
@@ -15,16 +16,16 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #0f172a;
+    background: #0f172a;
     color: #e2e8f0;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .container {
     width: 90%;
     max-width: 1100px;
     margin: auto;
-    padding: 80px 0;
+    padding: 90px 0;
 }
 
 h1, h2, h3 {
@@ -32,12 +33,18 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 48px;
+    font-weight: 700;
 }
 
 h2 {
     font-size: 32px;
     color: #38bdf8;
+}
+
+h3 {
+    font-size: 20px;
+    color: #ffffff;
 }
 
 p {
@@ -47,11 +54,7 @@ p {
 
 .hero {
     text-align: center;
-    padding: 120px 0;
-}
-
-.hero h1 {
-    font-size: 48px;
+    padding: 140px 0 120px 0;
 }
 
 .hero p {
@@ -63,30 +66,45 @@ p {
     border-top: 1px solid #1e293b;
 }
 
-.card-grid {
+.highlight {
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.grid-2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
     margin-top: 40px;
 }
 
 .card {
-    background-color: #1e293b;
+    background: #1e293b;
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 14px;
     transition: 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    background-color: #273449;
+    transform: translateY(-6px);
+    background: #273449;
+}
+
+.list {
+    margin-top: 15px;
+}
+
+.list li {
+    margin-bottom: 10px;
+    list-style: none;
+    color: #cbd5e1;
 }
 
 .button {
     display: inline-block;
-    margin-top: 30px;
-    padding: 12px 24px;
-    background-color: #38bdf8;
+    margin-top: 40px;
+    padding: 14px 28px;
+    background: #38bdf8;
     color: #0f172a;
     text-decoration: none;
     border-radius: 8px;
@@ -95,7 +113,7 @@ p {
 
 .footer {
     text-align: center;
-    padding: 40px 0;
+    padding: 50px 0;
     border-top: 1px solid #1e293b;
     font-size: 14px;
     color: #64748b;
@@ -105,78 +123,146 @@ p {
 </head>
 <body>
 
+<!-- HERO -->
+
 <section class="hero">
     <div class="container">
-        <h1>Имя Фамилия</h1>
-        <p>Разработчик онлайн-курсов | Методолог | Instructional Designer</p>
+        <h1>Иван Харитонов</h1>
+        <p><span class="highlight">Instructional Designer | Разработчик электронного обучения | Корпоративный L&D</span></p>
+        <p>
+            Проектирую и разрабатываю электронное обучение для retail и IT-команд.<br>
+            Соединяю методологию, продакшен и системное мышление, чтобы обучение работало на бизнес-результат.
+        </p>
         <a href="#contact" class="button">Связаться со мной</a>
     </div>
 </section>
 
+<!-- ABOUT -->
+
 <section class="section">
     <div class="container">
         <h2>Обо мне</h2>
-        <p>Разрабатываю онлайн-курсы, образовательные программы и корпоративное обучение. Работаю с экспертизой, превращая знания в структурированные образовательные продукты.</p>
-        <p>Опыт работы: X лет. Реализовано проектов: X+</p>
+        <p>
+            6+ лет в корпоративном обучении (T&D) в сфере retail и IT. Разрабатываю электронные курсы,
+            запускаю обучающие платформы и выстраиваю системные процессы обучения.
+        </p>
+        <p>
+            Работал с масштабом 10 000+ сотрудников, курировал кросс-функциональные команды и
+            выстраивал взаимодействие между обучением и бизнесом.
+        </p>
+        <p>
+            Строю обучение как инструмент решения бизнес-задач: через аналитику, геймификацию
+            и продуманную архитектуру программ.
+        </p>
     </div>
 </section>
 
+<!-- DEVELOPMENT -->
+
 <section class="section">
     <div class="container">
-        <h2>Мой подход</h2>
-        <div class="card-grid">
+        <h2>Разработка электронного обучения</h2>
+
+        <div class="grid-2">
+
             <div class="card">
-                <h3>Анализ</h3>
-                <p>Изучаю целевую аудиторию, задачи бизнеса и образовательные цели.</p>
+                <h3>Форматы разработки</h3>
+                <ul class="list">
+                    <li>SCORM-курсы (iSpring, Articulate)</li>
+                    <li>Слайдовые и лонгрид-форматы</li>
+                    <li>Тренажёры и симуляторы</li>
+                    <li>Мини-игры и low-code решения</li>
+                    <li>2D JS-платформер</li>
+                    <li>Обучающие видеокурсы</li>
+                    <li>Telegram-боты и лендинги</li>
+                </ul>
             </div>
+
             <div class="card">
-                <h3>Проектирование</h3>
-                <p>Создаю структуру курса, карту компетенций и образовательный сценарий.</p>
+                <h3>Полный цикл разработки</h3>
+                <ul class="list">
+                    <li>Анализ запроса и аудитории</li>
+                    <li>Проектирование структуры и логики курса</li>
+                    <li>Написание сценариев</li>
+                    <li>Разработка тестовых заданий</li>
+                    <li>Верстка курсов</li>
+                    <li>Геймификация</li>
+                    <li>Анализ эффективности</li>
+                </ul>
             </div>
-            <div class="card">
-                <h3>Разработка</h3>
-                <p>Разрабатываю материалы, интерактив, задания и систему оценки.</p>
-            </div>
+
         </div>
     </div>
 </section>
 
+<!-- SYSTEM -->
+
 <section class="section">
     <div class="container">
-        <h2>Кейсы</h2>
-        <div class="card-grid">
+        <h2>Системные решения и архитектура обучения</h2>
+
+        <div class="grid-2">
+
             <div class="card">
-                <h3>Название проекта</h3>
-                <p>Цель: ...</p>
-                <p>Результат: ...</p>
+                <h3>Проектирование систем</h3>
+                <ul class="list">
+                    <li>Запуск платформы для 13 000+ сотрудников</li>
+                    <li>Интеграция LMS в бизнес-процессы</li>
+                    <li>Настройка доступности обучения для аутсорс-персонала</li>
+                </ul>
             </div>
+
             <div class="card">
-                <h3>Название проекта</h3>
-                <p>Цель: ...</p>
-                <p>Результат: ...</p>
+                <h3>Аналитика и управление</h3>
+                <ul class="list">
+                    <li>Автоматизация аналитики (Jira / Яндекс Трекер)</li>
+                    <li>Data-driven обновление контента</li>
+                    <li>Курирование in-house и аутсорс-команд</li>
+                    <li>Внедрение AI-инструментов</li>
+                </ul>
             </div>
+
         </div>
     </div>
 </section>
 
+<!-- PROJECTS -->
+
 <section class="section">
     <div class="container">
-        <h2>Инструменты</h2>
-        <p>Articulate Storyline, iSpring, Figma, Miro, LMS (Moodle, GetCourse), Tilda, Notion</p>
+        <h2>Ключевые проекты</h2>
+
+        <div class="grid-2">
+
+            <div class="card">
+                <h3>Онлайн-платформа обучения</h3>
+                <p>Запуск платформы для 13 000+ сотрудников retail-сегмента.</p>
+                <p>Автоматизация аналитики и оптимизация доступа к обучению.</p>
+            </div>
+
+            <div class="card">
+                <h3>Программа развития руководителей</h3>
+                <p>Геймифицированная модель обучения с 2D JS-платформером и интерактивными тренажёрами.</p>
+            </div>
+
+        </div>
+
     </div>
 </section>
+
+<!-- CONTACT -->
 
 <section class="section" id="contact">
     <div class="container">
         <h2>Контакты</h2>
         <p>Email: your@email.com</p>
-        <p>Telegram: @username</p>
-        <p>LinkedIn: ссылка</p>
+        <p>Telegram: @fleitapozvonochnik</p>
+        <p>Санкт-Петербург | Готов к удалённой работе</p>
     </div>
 </section>
 
 <div class="footer">
-    © 2026 Имя Фамилия
+    © 2026 Иван Харитонов
 </div>
 
 </body>
