@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Имя Фамилия — Разработчик онлайн-курсов</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 0;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #38bdf8;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #cbd5e1;
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.section {
+    border-top: 1px solid #1e293b;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #273449;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid #1e293b;
+    font-size: 14px;
+    color: #64748b;
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="container">
+        <h1>Имя Фамилия</h1>
+        <p>Разработчик онлайн-курсов | Методолог | Instructional Designer</p>
+        <a href="#contact" class="button">Связаться со мной</a>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Обо мне</h2>
+        <p>Разрабатываю онлайн-курсы, образовательные программы и корпоративное обучение. Работаю с экспертизой, превращая знания в структурированные образовательные продукты.</p>
+        <p>Опыт работы: X лет. Реализовано проектов: X+</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Мой подход</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Анализ</h3>
+                <p>Изучаю целевую аудиторию, задачи бизнеса и образовательные цели.</p>
+            </div>
+            <div class="card">
+                <h3>Проектирование</h3>
+                <p>Создаю структуру курса, карту компетенций и образовательный сценарий.</p>
+            </div>
+            <div class="card">
+                <h3>Разработка</h3>
+                <p>Разрабатываю материалы, интерактив, задания и систему оценки.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Кейсы</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Название проекта</h3>
+                <p>Цель: ...</p>
+                <p>Результат: ...</p>
+            </div>
+            <div class="card">
+                <h3>Название проекта</h3>
+                <p>Цель: ...</p>
+                <p>Результат: ...</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Инструменты</h2>
+        <p>Articulate Storyline, iSpring, Figma, Miro, LMS (Moodle, GetCourse), Tilda, Notion</p>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <div class="container">
+        <h2>Контакты</h2>
+        <p>Email: your@email.com</p>
+        <p>Telegram: @username</p>
+        <p>LinkedIn: ссылка</p>
+    </div>
+</section>
+
+<div class="footer">
+    © 2026 Имя Фамилия
+</div>
+
+</body>
+</html>
